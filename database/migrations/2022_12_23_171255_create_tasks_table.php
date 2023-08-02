@@ -18,7 +18,7 @@ return new class extends Migration
             $table->unsignedBigInteger('user_id');
             $table->string('name');
             $table->string('description');
-            $table->string('priority')->default('medium');
+            $table->string('priority')->default('media');
             $table->foreign('user_id')
                 ->references('id')
                 ->on('users')
